@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+
+{# Here you are calling the name of the url with the key #}
+<p>{{controller_name}}</p>
+
+<p>Hello {{name}}</p>
+
+{# to display the array you need to make a join or a loop #}
+<p>{{name_array | join (', ')}}</p>
+
+{% endblock %}
